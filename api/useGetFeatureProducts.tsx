@@ -1,5 +1,5 @@
 import { error } from "console"
-import { use, useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 
 const useGetFeatureProducts = () => {
     const url = `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/products?filters[isFeature][$eq]=true&populate=*`

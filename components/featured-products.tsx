@@ -1,7 +1,7 @@
 'use client'
 import useGetFeatureProducts from '@/api/useGetFeatureProducts'
 import React from 'react'
-import { Carousel, CarouselContent, CarouselItem } from './ui/carousel'
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from './ui/carousel'
 import SkeletonSchema from './SkeletonSchema'
 import { ProductType } from '@/types/products'
 import { Card, CardContent } from './ui/card'
@@ -59,6 +59,8 @@ export const FeactureProducts = () => {
             })
           )}
         </CarouselContent>
+        <CarouselPrevious/>
+        <CarouselNext className='hidden sm:flex'/> 
       </Carousel>
     </div>
   )
