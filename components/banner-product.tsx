@@ -11,7 +11,7 @@ const BannerProducts = () => {
                 <p className="my2 text-lg">Despierta tus sentidos con cada sabor</p>
                 <Link href="#" className={buttonVariants()}>Comprar</Link>
             </div>
-            <div className="h-[300px] lg:h-[600px] bg-[url('/slider-image.jpg')] bg-cover bg-center mt-5"></div>
+            <div className="h-[300px] bg-cover lg:h-[600px] bg-[url('/slider-image.jpg')] bg-cover bg-center mt-5"></div>
         </>
     )
 }
