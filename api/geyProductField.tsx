@@ -5,7 +5,7 @@ export function useGetProductField(){
     const url = `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/content-type-builder/content-types/api::product.product`
     const [result, setResult] = useState<ResultFilterTypes | null>(null)
     const [loading, setLoading] = useState(true)
-    const [err, setErr] = useState('')
+    const [error, setErr] = useState('')
 
     useEffect(() => {
         (async () => {
@@ -21,5 +21,5 @@ export function useGetProductField(){
         })()
     },[url])
 
-    return { loading, result, err}
+    return { loading, result, error}
 }
