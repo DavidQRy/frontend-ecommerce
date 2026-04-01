@@ -1,5 +1,6 @@
 export type ProductType = {
     id: number;
+    origin: string;
      productName: string;
         slug: string;
         description: string;
