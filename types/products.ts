@@ -10,10 +10,8 @@ export type ProductType = {
         price: number;
         images: {
             id: number;
-            attributes: {
-                url: string
-            }[];
-        };
+                url: string;
+        }[];
         category: {
             data: {
                 attributes: {
